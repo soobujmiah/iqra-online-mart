@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SKB Evidence Ledger Entry",
+  "type": "object",
+  "required": ["evidence_id", "project_id", "claim", "level", "source", "status"],
+  "properties": {
+    "evidence_id": {"type": "string", "minLength": 1},
+    "project_id": {"type": "string"},
+    "claim": {"type": "string", "minLength": 1},
+    "level": {"enum": ["source", "test", "ci", "emulator", "device", "release"]},
+    "source": {"type": "string", "minLength": 1},
+    "ref": {"type": "string"},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "status": {"enum": ["supports", "contradicts", "inconclusive", "superseded"]},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}

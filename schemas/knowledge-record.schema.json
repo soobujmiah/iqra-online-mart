@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SKB Knowledge Record",
+  "description": "One claim-level record in knowledge/records/. The flat yaml block inside each record file must satisfy this shape. Consumed by scripts/validate_knowledge_records.py (which enforces the full rule set: freshness, provenance, supersession reciprocity/cycles, contradiction detection). The canonical Markdown document named by 'canonical' always outranks the record.",
+  "type": "object",
+  "required": ["id", "type", "title", "entity", "property", "value", "status", "confidence", "source_type", "source", "freshness", "updated_at"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "type": {"enum": ["identity", "portfolio-priority", "project-state", "repository-fact", "device-fact", "device-evidence", "problem", "solution", "operations", "historical"]},
+    "title": {"type": "string", "minLength": 1},
+    "entity": {"type": "string", "minLength": 1},
+    "property": {"type": "string", "minLength": 1},
+    "value": {"type": "string", "minLength": 1},
+    "status": {"enum": ["current", "superseded", "historical", "retracted", "unknown"]},
+    "confidence": {"type": "string", "description": "vocabulary read live from graph/ontology.yaml"},
+    "claim_type": {"enum": ["specification", "device-behavior", "project-state", "personal-fact", "historical-event", "portfolio-strategy", "operations-state", null]},
+    "source_type": {"enum": ["USER", "GITHUB", "DEVICE_EVIDENCE", "REPOSITORY_FILE", "CI", "COMMIT", "PR", "PUBLIC_PORTFOLIO", "EXPERIMENT", "INFERENCE", "PLATFORM_SPEC", "LEGACY", "UNKNOWN"]},
+    "source": {"type": "string", "minLength": 1},
+    "canonical": {"type": ["string", "null"]},
+    "freshness": {"enum": ["STABLE", "SLOW_CHANGING", "VOLATILE", "EVENT_STATE", "UNKNOWN"]},
+    "occurred_at": {"type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "observed_at": {"type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "verified_at": {"type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "updated_at": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "review_after": {"type": ["string", "null"], "description": "YYYY-MM-DD or 'event:<trigger>'"},
+    "supersedes": {"type": ["string", "array", "null"], "items": {"type": "string"}},
+    "superseded_by": {"type": ["string", "null"]},
+    "related_entities": {"type": ["array", "null"], "items": {"type": "string"}},
+    "related_projects": {"type": ["array", "null"], "items": {"type": "string"}},
+    "note": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

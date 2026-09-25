@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SKB Intelligence Recommendation",
+  "type": "object",
+  "required": ["recommendation_id", "subject", "conclusion", "confidence", "evidence", "human_decision"],
+  "properties": {
+    "recommendation_id": {"type": "string", "minLength": 1},
+    "subject": {"type": "string", "minLength": 1},
+    "conclusion": {"type": "string", "minLength": 1},
+    "confidence": {"enum": ["high", "medium", "low"]},
+    "evidence": {"type": "array", "items": {"type": "object", "required": ["source", "ref", "supports"], "properties": {"source": {"type": "string"}, "ref": {"type": "string"}, "supports": {"type": "string"}}, "additionalProperties": false}},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "conflicts": {"type": "array", "items": {"type": "string"}},
+    "alternatives": {"type": "array", "items": {"type": "string"}},
+    "human_decision": {"enum": ["pending", "approved", "rejected", "deferred"]},
+    "outcome": {"type": "string"}
+  },
+  "additionalProperties": false
+}
