@@ -1,13 +1,13 @@
 schema_version: 1
 project_id: iqra-online-mart
 repository: soobujmiah/iqra-online-mart
-generated_at: '2026-09-26T04:39:11Z'
+generated_at: '2026-09-26T21:48:56Z'
 generated_by: tools/repo_knowledge collect
-version: 8e30ea5
+version: 4068bf9
 head:
-  commit: 8e30ea5f25dd3be85255948209ad9288e3f0f948
+  commit: 4068bf9b47fb72c459135d389396e92673e30adf
   branch: master
-  committed_at: '2026-09-26T04:38:24Z'
+  committed_at: '2026-09-26T21:47:50Z'
 phases:
   source: not_configured
   completed: []
@@ -15,19 +15,25 @@ phases:
   next: null
 build:
   status: passed
-  run_id: '36218435694'
-  at: '2026-09-26T04:39:11Z'
+  run_id: '36274149343'
+  commit: 4068bf9b47fb72c459135d389396e92673e30adf
+  run_attempt: '1'
+  at: '2026-09-26T21:48:56Z'
+  timestamp_source: observed
 test:
   status: unknown
-  run_id: null
-  at: '2026-09-26T04:39:11Z'
+  run_id: '36274149343'
+  commit: 4068bf9b47fb72c459135d389396e92673e30adf
+  run_attempt: '1'
+  at: '2026-09-26T21:48:56Z'
+  timestamp_source: observed
   summary: Pages deployment (static site, no test suite)
 last_successful_build:
-  commit: 8e30ea5f25dd3be85255948209ad9288e3f0f948
-  at: '2026-09-26T04:39:11Z'
-  run_id: '36218435694'
+  commit: 4068bf9b47fb72c459135d389396e92673e30adf
+  at: '2026-09-26T21:48:56Z'
+  run_id: '36274149343'
 last_failed_build: null
 sync:
   status: ok
-  last_synced_at: '2026-09-26T04:39:11Z'
+  last_synced_at: '2026-09-26T21:48:56Z'
   source: ci
