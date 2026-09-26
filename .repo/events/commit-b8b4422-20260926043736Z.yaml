@@ -1,0 +1,7 @@
+event_id: commit-b8b4422-20260926043736Z
+repository: soobujmiah/iqra-online-mart
+commit: b8b44228740506c1d0c26f4e5b2dbacd1459a067
+kind: commit
+occurred_at: '2026-09-26T04:37:36Z'
+status: completed
+summary: 'fix: switch repo-knowledge-sync from workflow_run to push trigger'
