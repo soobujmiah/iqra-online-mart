@@ -1,13 +1,13 @@
 schema_version: 1
 project_id: iqra-online-mart
 repository: soobujmiah/iqra-online-mart
-generated_at: '2026-09-29T17:22:29Z'
+generated_at: '2026-09-29T22:46:08Z'
 generated_by: tools/repo_knowledge collect
-version: 53ea8ed
+version: 752b2ad
 head:
-  commit: 53ea8ed9970300138c03b5970a6762f7dafffed4
+  commit: 752b2adc4345c99ad240ce9ce7f95b41599fe4ba
   branch: master
-  committed_at: '2026-09-29T17:17:55Z'
+  committed_at: '2026-09-29T22:38:18Z'
 phases:
   source: not_configured
   completed: []
@@ -15,33 +15,33 @@ phases:
   next: null
 build:
   status: passed
-  run_id: '36603947170'
-  commit: 53ea8ed9970300138c03b5970a6762f7dafffed4
+  run_id: '36640748897'
+  commit: 752b2adc4345c99ad240ce9ce7f95b41599fe4ba
   run_attempt: '1'
-  at: '2026-09-29T17:22:29Z'
+  at: '2026-09-29T22:46:08Z'
   timestamp_source: observed
   workflow_name: Repo Knowledge Sync
   event_type: push
   actor: soobujmiah
-  run_url: https://github.com/soobujmiah/iqra-online-mart/actions/runs/36603947170
+  run_url: https://github.com/soobujmiah/iqra-online-mart/actions/runs/36640748897
 test:
   status: unknown
-  run_id: '36603947170'
-  commit: 53ea8ed9970300138c03b5970a6762f7dafffed4
+  run_id: '36640748897'
+  commit: 752b2adc4345c99ad240ce9ce7f95b41599fe4ba
   run_attempt: '1'
-  at: '2026-09-29T17:22:29Z'
+  at: '2026-09-29T22:46:08Z'
   timestamp_source: observed
   workflow_name: Repo Knowledge Sync
   event_type: push
   actor: soobujmiah
-  run_url: https://github.com/soobujmiah/iqra-online-mart/actions/runs/36603947170
+  run_url: https://github.com/soobujmiah/iqra-online-mart/actions/runs/36640748897
   summary: Pages deployment (static site, no test suite)
 last_successful_build:
-  commit: 53ea8ed9970300138c03b5970a6762f7dafffed4
-  at: '2026-09-29T17:22:29Z'
-  run_id: '36603947170'
+  commit: 752b2adc4345c99ad240ce9ce7f95b41599fe4ba
+  at: '2026-09-29T22:46:08Z'
+  run_id: '36640748897'
 last_failed_build: null
 sync:
   status: ok
-  last_synced_at: '2026-09-29T17:22:29Z'
+  last_synced_at: '2026-09-29T22:46:08Z'
   source: ci

@@ -2,15 +2,15 @@
 # iqra-online-mart -- deterministic status
 
 - Repository: `soobujmiah/iqra-online-mart`
-- Generated at: 2026-09-29T17:22:29Z (by `tools/repo_knowledge collect`)
-- Version: `53ea8ed`
-- Head: `53ea8ed9970300138c03b5970a6762f7dafffed4` on `master` (2026-09-29T17:17:55Z)
+- Generated at: 2026-09-29T22:46:08Z (by `tools/repo_knowledge collect`)
+- Version: `752b2ad`
+- Head: `752b2adc4345c99ad240ce9ce7f95b41599fe4ba` on `master` (2026-09-29T22:38:18Z)
 
 ## Build / test
 
-- Build: **passed** (run `36603947170`)
+- Build: **passed** (run `36640748897`)
 - Test: **unknown** -- Pages deployment (static site, no test suite)
-- Last successful build: `53ea8ed9970300138c03b5970a6762f7dafffed4` at 2026-09-29T17:22:29Z
+- Last successful build: `752b2adc4345c99ad240ce9ce7f95b41599fe4ba` at 2026-09-29T22:46:08Z
 
 ## Phases
 - Not configured (no `.repo/phases.yaml`).
@@ -19,4 +19,4 @@
 
 - Status: ok
 - Source: ci
-- Last synced at: 2026-09-29T17:22:29Z
+- Last synced at: 2026-09-29T22:46:08Z

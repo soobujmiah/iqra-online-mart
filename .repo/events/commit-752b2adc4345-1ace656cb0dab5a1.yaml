@@ -1,0 +1,8 @@
+event_id: commit-752b2adc4345-1ace656cb0dab5a1
+repository: soobujmiah/iqra-online-mart
+commit: 752b2adc4345c99ad240ce9ce7f95b41599fe4ba
+kind: commit
+occurred_at: '2026-09-29T22:38:18Z'
+status: completed
+summary: Declare the repository's canonical type and add the documentation scaffold
+  (migration waves 2/3)
