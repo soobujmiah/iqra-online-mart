@@ -1,13 +1,13 @@
 schema_version: 1
 project_id: iqra-online-mart
 repository: soobujmiah/iqra-online-mart
-generated_at: '2026-09-26T21:48:56Z'
+generated_at: '2026-09-29T17:22:29Z'
 generated_by: tools/repo_knowledge collect
-version: 4068bf9
+version: 53ea8ed
 head:
-  commit: 4068bf9b47fb72c459135d389396e92673e30adf
+  commit: 53ea8ed9970300138c03b5970a6762f7dafffed4
   branch: master
-  committed_at: '2026-09-26T21:47:50Z'
+  committed_at: '2026-09-29T17:17:55Z'
 phases:
   source: not_configured
   completed: []
@@ -15,25 +15,33 @@ phases:
   next: null
 build:
   status: passed
-  run_id: '36274149343'
-  commit: 4068bf9b47fb72c459135d389396e92673e30adf
+  run_id: '36603947170'
+  commit: 53ea8ed9970300138c03b5970a6762f7dafffed4
   run_attempt: '1'
-  at: '2026-09-26T21:48:56Z'
+  at: '2026-09-29T17:22:29Z'
   timestamp_source: observed
+  workflow_name: Repo Knowledge Sync
+  event_type: push
+  actor: soobujmiah
+  run_url: https://github.com/soobujmiah/iqra-online-mart/actions/runs/36603947170
 test:
   status: unknown
-  run_id: '36274149343'
-  commit: 4068bf9b47fb72c459135d389396e92673e30adf
+  run_id: '36603947170'
+  commit: 53ea8ed9970300138c03b5970a6762f7dafffed4
   run_attempt: '1'
-  at: '2026-09-26T21:48:56Z'
+  at: '2026-09-29T17:22:29Z'
   timestamp_source: observed
+  workflow_name: Repo Knowledge Sync
+  event_type: push
+  actor: soobujmiah
+  run_url: https://github.com/soobujmiah/iqra-online-mart/actions/runs/36603947170
   summary: Pages deployment (static site, no test suite)
 last_successful_build:
-  commit: 4068bf9b47fb72c459135d389396e92673e30adf
-  at: '2026-09-26T21:48:56Z'
-  run_id: '36274149343'
+  commit: 53ea8ed9970300138c03b5970a6762f7dafffed4
+  at: '2026-09-29T17:22:29Z'
+  run_id: '36603947170'
 last_failed_build: null
 sync:
   status: ok
-  last_synced_at: '2026-09-26T21:48:56Z'
+  last_synced_at: '2026-09-29T17:22:29Z'
   source: ci

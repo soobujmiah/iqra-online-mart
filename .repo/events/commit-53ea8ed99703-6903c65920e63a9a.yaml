@@ -1,0 +1,8 @@
+event_id: commit-53ea8ed99703-6903c65920e63a9a
+repository: soobujmiah/iqra-online-mart
+commit: 53ea8ed9970300138c03b5970a6762f7dafffed4
+kind: commit
+occurred_at: '2026-09-29T17:17:55Z'
+status: completed
+summary: 'chore(repo-knowledge): remove committed __pycache__ bytecode and ignore
+  pyc'
